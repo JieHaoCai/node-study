@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <hr></hr>                               
+    <!-- 文件上传的必须参数    enctype="multipart/form-data"-->
+    <form aciton="/portrait" method="post" enctype="multipart/form-data">  
+      <input type="file" name="portrait" />
+      <button>点击提交</button>
+    </form>
+  </body>
+</html>
